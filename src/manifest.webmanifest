@@ -1,0 +1,11 @@
+{
+  "lang": "uk",
+  "name": "ChernihivJS",
+  "short_name": "ChernihivJS",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#F7DF1E",
+  "background_color": "#F7DF1E",
+  "start_url": "/",
+  "scope": "/"
+}

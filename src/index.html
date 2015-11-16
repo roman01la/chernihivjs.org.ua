@@ -5,50 +5,29 @@
   <title>ChernihivJS</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F7DF1E">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#F7DF1E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,100&subset=latin,cyrillic" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font: normal 20px 'Roboto', sans-serif;
-      color: #000;
-      background: #F7DF1E;
-    }
-
-    .overview {
-      text-align: center;
-    }
-
-    .overview h1 {
-      font-size: 3em;
-      font-weight: 100;
-    }
-
-    .logo {
-      width: 300px;
-      height: 330px;
-    }
-  </style>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
   <main class="main-content">
 
-    <section class="overview">
-
-      <h1>ChernihivJS</h1>
-
-      <img src="/img/logo.svg" alt="ChernihivJS logo " class="logo">
-
-    </section>
+    <h1>ChernihivJS</h1>
 
   </main>
 
+  <footer class="page-footer">
+    <p><small><a href="mailto:roman01la@romanliutikov.com">@</a></small></p>
+  </footer>
+
   <script>
-    console.log(
-      `-->> Doing JavaScript meetup in Chernihiv? <<--
-     contact: roman01la@romanliutikov.com`);
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service_worker.js', { scope: './' });
+    }
   </script>
 
 </body>
