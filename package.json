@@ -1,0 +1,15 @@
+{
+  "name": "chernihivjs.org.ua",
+  "version": "1.0.0",
+  "description": "chernihivjs.org.ua source",
+  "scripts": {
+    "build": "npm run clean && npm run copy && npm run css",
+    "clean": "rm -r build && mkdir build",
+    "copy": "cp src/* build",
+    "css": "postcss --use autoprefixer src/styles.css -d build/"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "postcss-cli": "^2.3.2"
+  }
+}

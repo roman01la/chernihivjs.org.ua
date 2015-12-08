@@ -10,25 +10,22 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
 
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="/styles.css" integrity="sha256-stx0OUAHCvwOY0fzusUuUNsJ8tOfgF4sQ7CXnToYDsU=">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
   <main class="main-content">
 
-    <h1>ChernihivJS</h1>
+    <h1>
+      <img src="logo.svg" alt="logo" class="logo">
+      <span>ChernihivJS</span>
+    </h1>
 
   </main>
 
   <footer class="page-footer">
     <p><small><a href="mailto:roman01la@romanliutikov.com">@</a></small></p>
   </footer>
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service_worker.js', { scope: './' });
-    }
-  </script>
 
 </body>
 </html>
