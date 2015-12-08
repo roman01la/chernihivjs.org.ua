@@ -4,9 +4,9 @@
   "description": "chernihivjs.org.ua source",
   "scripts": {
     "build": "npm run clean && npm run copy && npm run css",
-    "clean": "rm -r build && mkdir build",
-    "copy": "cp src/* build",
-    "css": "postcss --use autoprefixer src/styles.css -d build/"
+    "clean": "rm -r build && mkdir -p build/styles",
+    "copy": "cp -r src/* build",
+    "css": "postcss --use autoprefixer src/styles/main.css -d build/styles/"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.2",
