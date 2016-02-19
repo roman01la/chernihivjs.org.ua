@@ -17,21 +17,71 @@
 
   <main class="main-content">
 
-    <h1>
-      <img src="/img/logo.svg" alt="logo" class="logo">
-      <span>ChernihivJS</span>
-    </h1>
+    <section class="intro">
 
-    <ul class="list">
-      <li class="list-item"><a href="https://www.facebook.com/groups/chernihivjs/">Мы на Facebook</a></li>
-      <li class="list-item"><a href="http://www.meetup.com/chernihivjs/">Мы на Meetup</a></li>
-    </ul>
+      <h1>
+        <img src="/img/logo.svg" alt="logo" class="logo">
+        <span>ChernihivJS</span>
+      </h1>
+
+      <ul class="links-list list">
+        <li class="list-item"><a href="https://www.facebook.com/groups/chernihivjs/">Мы на Facebook</a></li>
+        <li class="list-item"><a href="http://www.meetup.com/chernihivjs/">Мы на Meetup</a></li>
+      </ul>
+
+      <a data-scroll href="#events" class="arrow">
+        <svg width="41px" height="16px" viewBox="0 0 41 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <path d="M1,1 L20.5,15 L40,1" id="Path-1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </svg>
+      </a>
+
+    </section>
+
+    <section class="events">
+
+      <h2 class="heading" id="events">Предыдущие встречи</h2>
+
+      <ul class="event-list list">
+        <li>
+          <div class="event-block">
+            <h3>18 февраля, 2016</h3>
+            <ul class="speakers-list list">
+
+              <li class="speaker">
+                <img class="speaker-img" src="/pictures/roman-liutikov.jpg" alt="Роман Лютиков" />
+                <span class="column">
+                  <a href="https://twitter.com/roman01la"><strong>Роман Лютиков</strong></a>
+                  <a href="https://romanliutikov.com/async-js/">Асинхронный JavaScript</a>
+                </span>
+              </li>
+
+              <li class="speaker">
+                <img class="speaker-img" src="/pictures/gleb-vinnikov.jpeg" alt="Глеб Винников" />
+                <span class="column">
+                  <a href="https://www.facebook.com/gleb.vinnikov"><strong>Глеб Винников</strong></a>
+                  <a href="https://github.com/glebv/johnny5-temperature-socket">JS и Железо</a>
+                </span>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+    </section>
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="footer">
     <p><small><a href="mailto:mail@chernihivjs.org.ua">@</a></small></p>
   </footer>
+
+  <script src="/js/smooth-scroll.min.js"></script>
+  <script>
+    smoothScroll.init();
+  </script>
 
 </body>
 </html>
