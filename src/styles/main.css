@@ -53,6 +53,11 @@ h1 {
 .links-list {
   font-size: 16px;
   margin: 50px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.list-item {
+  margin: 0 8px;
 }
 .footer {
   text-align: center;
@@ -111,6 +116,28 @@ h1 {
 }
 .arrow:hover {
   cursor: pointer;
+}
+
+.icon {
+  display: block;
+  font-size: 0;
+  background-image: url(/img/social.svg);
+  background-repeat: no-repeat;
+}
+.icon.fb {
+  width: 24px;
+  height: 24px;
+  background-position: 0 0;
+}
+.icon.tt {
+  width: 29px;
+  height: 24px;
+  background-position: -24px 0;
+}
+.icon.mp {
+  width: 37px;
+  height: 24px;
+  background-position: -53px 0;
 }
 
 @keyframes bounce {
